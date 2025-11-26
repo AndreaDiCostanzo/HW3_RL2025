@@ -1,5 +1,4 @@
 # HW3 repository - Fly your drone
-## Setup required
 To correctly setup the model, it is necessary to clone the PX4-Autopilot and px4_msgs repositories inside the hw3_ws directory beforehand.
 ````
 git clone https://github.com/PX4/PX4-Autopilot.git --recursive
