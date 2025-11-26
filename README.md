@@ -27,7 +27,7 @@ Then it is mandatory to start the bridge and allow the communication between ros
 ````
 The last step is to open QGround.
 ````
-./QGroundControl-x86_64
+./QGroundControl-x86_64.AppImage
 ````
 ## Simulate the custom drone
 To start the custom drone
