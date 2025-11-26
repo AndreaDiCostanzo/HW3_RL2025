@@ -1,4 +1,5 @@
 # HW3 repository - Fly your drone
+## Setup required
 To correctly setup the model, it is necessary to clone the PX4-Autopilot and px4_msgs repositories inside the hw3_ws directory beforehand.
 ````
 git clone https://github.com/PX4/PX4-Autopilot.git --recursive
@@ -27,23 +28,23 @@ Then it is mandatory to start the bridge and allow the communication between ros
 ````
 The last step is to open QGround.
 ````
-./QGroundControl-x86_64.AppImage
+./QGroundControl-x86_64
 ````
-## Build your custom drone
+## Simulate the custom drone
 To start the custom drone
 ````
 cd PX4_Autopilot
 make px4_sitl gz_hw3_drone
 ````
 
-## Modify force_land node
+## Test the modified force_land node
 To run the modified force_land node, it is first necessary to open a new terminal and then source the overlay and run the ros2 node while keeping running the drone terminal, the DDS bridge terminal and QGround
 ````
 colcon build --packages-select force_land
 . install/setup.bash
 ros2 run force_land force_land
 ````
-## Design trajectory waypoints
+## Perform the planned trajectory
 To run the trajectory planned, it is first necessary to open a new terminal and then source the overlay and run the ros2 node while keeping running the drone terminal, the DDS bridge terminal and QGround
 
 ````
